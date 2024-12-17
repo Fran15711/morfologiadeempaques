@@ -14,8 +14,6 @@
         #pdf-container {
             width: 100%;
             background-color: #f0f0f0;
-            display: flex;
-            justify-content: center; /* Centrar el contenido */
         }
 
         canvas {
@@ -23,15 +21,8 @@
             margin: 20px auto;
             background-color: white;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-            width: 100%; /* Móvil por defecto */
+            width: 100%; /* Ancho completo */
             height: auto; /* Proporciones automáticas */
-        }
-
-        /* Estilos específicos para computadoras */
-        @media screen and (min-width: 768px) {
-            canvas {
-                width: 50%; /* Reducir a 50% del contenedor en pantallas grandes */
-            }
         }
     </style>
 </head>
@@ -91,6 +82,4 @@
         loadPDF();
     </script>
 </body>
-</html>
-
 </html>
